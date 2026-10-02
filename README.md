@@ -2,7 +2,7 @@
 
 Website panduan wisata Kota Singkawang, Kalimantan Barat, untuk pendatang yang baru pertama kali berkunjung. Isinya mengenalkan kota, destinasi wisata, kuliner, cafe, oleh-oleh, dan kegiatan budaya yang rutin ada di Singkawang.
 
-🔗 **Demo:** https://USERNAME.github.io/singkawangku/
+🔗 **Demo:** [https://USERNAME.github.io/singkawangku/](https://aziiztrinaldi.github.io/SingkawangKu/)
 
 ## Halaman
 
