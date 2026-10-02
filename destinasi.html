@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinasi — SingkawangKu</title>
+  <meta name="description" content="Tempat wisata, kuliner, cafe, dan oleh-oleh khas Singkawang.">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="SingkawangKu, ke beranda">
+        <span class="brand-mark" aria-hidden="true">山</span>
+        <span class="brand-text">Singkawang<strong>Ku</strong></span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="menu-utama" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="menu-utama" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="index.html#tentang">Tentang</a></li>
+          <li><a href="destinasi.html" class="is-current" aria-current="page">Destinasi</a></li>
+          <li><a href="kegiatan.html">Kegiatan Budaya</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- JUDUL HALAMAN -->
+    <section class="page-head">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Beranda</a> / Destinasi</p>
+        <h1>Mau ke mana hari ini?</h1>
+        <p class="lead">
+          Dari pantai, kopitiam, sampai oleh-oleh buat orang rumah. Semua tempat di sini
+          kami rangkum, tinggal pilih yang sesuai mood.
+        </p>
+      </div>
+    </section>
+
+    <!--SOROTAN-->
+    <section class="section section-tight" aria-labelledby="judul-sorotan">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Sorotan</p>
+          <h2 id="judul-sorotan">Kalau waktunya mepet, ke sini dulu</h2>
+        </header>
+
+        <div class="spotlight-grid">
+          <article class="spot spot-besar">
+            <img src="https://pastikesingkawang.id/files/media/2610/41e377ba-6130-4c09-a6a7-2962a8ed1805.jpg" alt="Kawasan Pasar Hongkong" loading="lazy">
+            <div class="spot-body">
+              <span class="tag tag-kuliner">Kuliner Malam</span>
+              <h3>Kawasan Pasar Hongkong</h3>
+              <p>Pagi jadi pasar, malam jadi tempat jajan. Pas Imlek, jalanannya penuh lampion merah dan auto jadi spot foto paling ramai.</p>
+              <button class="btn-detail btn-detail-light" data-id="pasar-hongkong">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="spot">
+            <img src="https://pastikesingkawang.id/files/media/2604/728e105f-949d-402c-8be5-379e30512fd5.jpg" alt="Tanjung Bajau" loading="lazy">
+            <div class="spot-body">
+              <span class="tag tag-alam">Destinasi</span>
+              <h3>Tanjung Bajau</h3>
+              <button class="btn-detail btn-detail-light" data-id="tanjung-bajau">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="spot">
+            <img src="https://pastikesingkawang.id/files/media/2608/571c72e4-89d8-42ba-8051-ca217533672a.jpg" alt="Tahu Singkawang" loading="lazy">
+            <div class="spot-body">
+              <span class="tag tag-oleh">Oleh-Oleh</span>
+              <h3>Tahu Singkawang</h3>
+              <button class="btn-detail btn-detail-light" data-id="tahu">Lihat Detail</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- JELAJAH-->
+    <section class="section" id="jelajah" aria-labelledby="judul-jelajah">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Jelajah</p>
+          <h2 id="judul-jelajah">Semua tempat</h2>
+          <p>Pilih kategori atau ketik nama tempat. Klik "Lihat Detail" buat alamat, jam buka, dan harga.</p>
+        </header>
+
+        <div class="toolbar">
+          <div class="filters" role="group" aria-label="Filter kategori">
+            <button class="filter-btn is-active" data-filter="semua" aria-pressed="true">Semua</button>
+            <button class="filter-btn" data-filter="wisata" aria-pressed="false">Destinasi Wisata</button>
+            <button class="filter-btn" data-filter="kuliner" aria-pressed="false">Kuliner</button>
+            <button class="filter-btn" data-filter="cafe" aria-pressed="false">Cafe</button>
+            <button class="filter-btn" data-filter="oleh" aria-pressed="false">Oleh-Oleh</button>
+          </div>
+          <label class="search">
+            <span class="visually-hidden">Cari tempat</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+            <input type="search" id="cari" placeholder="Cari tempat, misal: kopi">
+          </label>
+        </div>
+
+        
+        <p class="result-count" id="jumlah-hasil" aria-live="polite">Menampilkan 16 tempat</p>
+
+        <div class="card-grid">
+
+          <!-- ---------- DESTINASI WISATA ---------- -->
+          <article class="card" data-category="wisata">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2604/728e105f-949d-402c-8be5-379e30512fd5.jpg" alt="Tanjung Bajau" loading="lazy">
+              <span class="tag tag-alam">Destinasi Wisata</span>
+            </div>
+            <div class="card-body">
+              <h3>Tanjung Bajau</h3>
+              <p>Satu kawasan isinya lengkap: pantai, akuarium, sampai kebun binatang mini. Pas buat liburan bareng keluarga.</p>
+              <ul class="card-meta"><li>Singkawang Selatan</li><li>Buka 24 jam</li></ul>
+              <button class="btn-detail" data-id="tanjung-bajau">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="card" data-category="wisata">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2604/84df14b0-c8c3-4754-9adc-c0c215b60a25.jpg" alt="Taman Pasir Panjang Indah" loading="lazy">
+              <span class="tag tag-alam">Destinasi Wisata</span>
+            </div>
+            <div class="card-body">
+              <h3>Taman Pasir Panjang Indah</h3>
+              <p>Pantainya luas dan landai, enak buat main air atau sekadar duduk nunggu sunset.</p>
+              <ul class="card-meta"><li>Singkawang Selatan</li><li>Buka 24 jam</li></ul>
+              <button class="btn-detail" data-id="pasir-panjang">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="card" data-category="wisata">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2607/8dc8e2ed-a19a-4d81-ac3f-840a05857fe2.jpg" alt="Dayo Aek Bagak Sahwa" loading="lazy">
+              <span class="tag tag-alam">Destinasi Wisata</span>
+            </div>
+            <div class="card-body">
+              <h3>Dayo Aek Bagak Sahwa</h3>
+              <p>Sungai berbatu dengan air gunung yang jernih dan dingin. Spot healing yang beneran bikin healing.</p>
+              <ul class="card-meta"><li>Singkawang Timur</li><li>07.00–17.00</li></ul>
+              <button class="btn-detail" data-id="dayo-aek">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="card" data-category="wisata">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2604/6ef11784-cec5-42d2-b208-69d0ddd00efa.jpg" alt="Bisa Camping" loading="lazy">
+              <span class="tag tag-alam">Destinasi Wisata</span>
+            </div>
+            <div class="card-body">
+              <h3>Bisa Camping</h3>
+              <p>Glamping dengan view Gunung Pasi. Mau datang sehari atau nginap, dua-duanya bisa.</p>
+              <ul class="card-meta"><li>Singkawang Selatan</li><li>11.00–19.00</li></ul>
+              <button class="btn-detail" data-id="bisa-camping">Lihat Detail</button>
+            </div>
+          </article>
+
+          <!-- ---------- KULINER ---------- -->
+          <article class="card" data-category="kuliner">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2610/9615aa6d-3565-4a7e-9b92-902a5fa517d6.jpg" alt="Rujak Singkawang" loading="lazy">
+              <span class="tag tag-kuliner">Kuliner</span>
+            </div>
+            <div class="card-body">
+              <h3>Rujak Singkawang</h3>
+              <p>Rujak buah dengan bumbu kacang plus ebi. Manis, asam, pedas, gurih, semuanya dapet.</p>
+              <ul class="card-meta"><li>Singkawang Barat</li><li>09.00–22.00</li></ul>
+              <button class="btn-detail" data-id="rujak">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="card" data-category="kuliner">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2609/9658fb6a-e3b5-4630-9e58-bbc22a5df2a6.jpg" alt="Mie Asin Singkawang" loading="lazy">
+              <span class="tag tag-kuliner">Kuliner</span>
+            </div>
+            <div class="card-body">
+              <h3>Mie Asin Singkawang</h3>
+              <p>Mie panjang yang katanya lambang umur panjang. Paling mantap dimakan pagi-pagi pakai kuah.</p>
+              <ul class="card-meta"><li>Singkawang Barat</li><li>08.00–17.00</li></ul>
+              <button class="btn-detail" data-id="mie-asin">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="card" data-category="kuliner">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2610/41e377ba-6130-4c09-a6a7-2962a8ed1805.jpg" alt="Kawasan Pasar Hongkong" loading="lazy">
+              <span class="tag tag-kuliner">Kuliner</span>
+            </div>
+            <div class="card-body">
+              <h3>Kawasan Pasar Hongkong</h3>
+              <p>Pagi jadi pasar, malam jadi tempat jajan. Kwetiau, roti bakar, pisang goreng srikaya, tinggal pilih.</p>
+              <ul class="card-meta"><li>Singkawang Tengah</li><li>Pagi & malam</li></ul>
+              <button class="btn-detail" data-id="pasar-hongkong">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="card" data-category="kuliner">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2609/e0deacb0-73c2-4ea5-bf12-78cb00d939f4.jpg" alt="San Kheu Jong Kopitiam" loading="lazy">
+              <span class="tag tag-kuliner">Kuliner</span>
+            </div>
+            <div class="card-body">
+              <h3>San Kheu Jong Kopitiam</h3>
+              <p>Kopitiam dua lantai dengan menu sarapan lengkap dan live music tiap hari.</p>
+              <ul class="card-meta"><li>Singkawang Tengah</li><li>06.00–23.45</li></ul>
+              <button class="btn-detail" data-id="skj-kopitiam">Lihat Detail</button>
+            </div>
+          </article>
+
+          <!-- ---------- CAFE ---------- -->
+          <article class="card" data-category="cafe">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2608/be740e23-3b33-4361-8b5c-ab6c9301f50b.jpg" alt="Djaya Kopi Tiam" loading="lazy">
+              <span class="tag tag-cafe">Cafe</span>
+            </div>
+            <div class="card-body">
+              <h3>Djaya Kopi Tiam</h3>
+              <p>Kopitiam modern yang punya taman, kolam ikan, dan air terjun buatan. Adem dan estetik.</p>
+              <ul class="card-meta"><li>Singkawang Barat</li><li>07.00–24.00</li></ul>
+              <button class="btn-detail" data-id="djaya">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="card" data-category="cafe">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2608/8825e241-2ee1-44b3-9129-ed5197906c24.jpg" alt="Tree House" loading="lazy">
+              <span class="tag tag-cafe">Cafe</span>
+            </div>
+            <div class="card-body">
+              <h3>Tree House</h3>
+              <p>Interiornya ada batang pohon raksasa dan panggung rumah pohon. Buka 24 jam, aman buat nongki malam.</p>
+              <ul class="card-meta"><li>Singkawang Barat</li><li>Buka 24 jam</li></ul>
+              <button class="btn-detail" data-id="tree-house">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="card" data-category="cafe">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2608/0906c173-7963-4514-9ea5-940f9db69ec5.jpg" alt="Weng Coffee" loading="lazy">
+              <span class="tag tag-cafe">Cafe</span>
+            </div>
+            <div class="card-body">
+              <h3>Weng Coffee</h3>
+              <p>Rooftop buat nongkrong malam, ruang ber-AC buat nugas. Satu tempat, dua mode.</p>
+              <ul class="card-meta"><li>Singkawang Barat</li><li>Buka 24 jam</li></ul>
+              <button class="btn-detail" data-id="weng">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="card" data-category="cafe">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2609/977278ad-8fea-4bd6-bd12-6d08a97ef24e.jpg" alt="Hola Cafe" loading="lazy">
+              <span class="tag tag-cafe">Cafe</span>
+            </div>
+            <div class="card-body">
+              <h3>Hola Cafe</h3>
+              <p>Menunya banyak banget, dari kopi, boba, sampai ramen. Cocok buat yang datang rame-rame.</p>
+              <ul class="card-meta"><li>Singkawang Barat</li><li>10.00–23.00</li></ul>
+              <button class="btn-detail" data-id="hola">Lihat Detail</button>
+            </div>
+          </article>
+
+          <!-- ---------- OLEH-OLEH & MAKANAN KHAS ---------- -->
+          <article class="card" data-category="oleh">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2608/571c72e4-89d8-42ba-8051-ca217533672a.jpg" alt="Tahu Singkawang" loading="lazy">
+              <span class="tag tag-oleh">Oleh-Oleh</span>
+            </div>
+            <div class="card-body">
+              <h3>Tahu Singkawang</h3>
+              <p>Tahu dari pabrik rumahan yang lembut dan gurih. Oleh-oleh paling ikonik dari Singkawang.</p>
+              <ul class="card-meta"><li>Singkawang Barat</li><li>05.00–17.00</li></ul>
+              <button class="btn-detail" data-id="tahu">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="card" data-category="oleh">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2608/81e94789-b8ec-4a93-a90b-d193808f0c06.jpg" alt="Kue Bulan" loading="lazy">
+              <span class="tag tag-oleh">Oleh-Oleh</span>
+            </div>
+            <div class="card-body">
+              <h3>Kue Bulan</h3>
+              <p>Kue bulat isi macam-macam. Paling ramai dicari pas Festival Kue Bulan.</p>
+              <ul class="card-meta"><li>Singkawang Barat</li><li>08.00–17.00</li></ul>
+              <button class="btn-detail" data-id="kue-bulan">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="card" data-category="oleh">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2608/b08455b0-5db3-4775-89f4-3587b29001a7.jpg" alt="Limun Cap Elang" loading="lazy">
+              <span class="tag tag-oleh">Oleh-Oleh</span>
+            </div>
+            <div class="card-body">
+              <h3>Limun Cap Elang</h3>
+              <p>Soda lokal legendaris. Rasa sarsi-nya wajib dicoba minimal sekali.</p>
+              <ul class="card-meta"><li>Singkawang Barat</li><li>07.30–17.00</li></ul>
+              <button class="btn-detail" data-id="limun">Lihat Detail</button>
+            </div>
+          </article>
+
+          <article class="card" data-category="oleh">
+            <div class="card-media">
+              <img src="https://pastikesingkawang.id/files/media/2608/d07c8d29-eda6-41c2-9eec-6fa69d31f30e.jpg" alt="Tenun Ikat Bu Rita" loading="lazy">
+              <span class="tag tag-oleh">Oleh-Oleh</span>
+            </div>
+            <div class="card-body">
+              <h3>Tenun Ikat Bu Rita</h3>
+              <p>Kain tenun ikat buatan tangan dengan motif sisik naga, anggrek, dan bintang.</p>
+              <ul class="card-meta"><li>Singkawang Selatan</li><li>09.00–17.00</li></ul>
+              <button class="btn-detail" data-id="tenun">Lihat Detail</button>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="empty-state" id="kosong" hidden>Belum ketemu nih. Coba kata kunci lain.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER-->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand brand-footer">
+          <span class="brand-mark" aria-hidden="true">山</span>
+          <span class="brand-text">Singkawang<strong>Ku</strong></span>
+        </a>
+        <p class="footer-tagline">Panduan santai buat kamu yang baru pertama kali main ke Singkawang.</p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Halaman</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="index.html#tentang">Tentang Singkawang</a></li>
+          <li><a href="destinasi.html">Destinasi & Kuliner</a></li>
+          <li><a href="kegiatan.html">Kegiatan Budaya</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Lokasi</h3>
+        <iframe class="footer-map" src="https://www.google.com/maps?q=Kota%20Singkawang&z=12&output=embed"
+                title="Peta Kota Singkawang" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="tahun">2026</span> SingkawangKu.</p>
+      <p>Referensi tempat: <a href="https://pastikesingkawang.id/" target="_blank" rel="noopener">pastikesingkawang.id</a></p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" id="ke-atas" aria-label="Kembali ke atas">↑</a>
+
+  <!-- POP-UP DETAIL -->
+  <dialog class="modal" id="modal" aria-labelledby="modal-judul">
+    <div class="modal-inner">
+      <button class="modal-close" id="modal-tutup" aria-label="Tutup">&times;</button>
+      <img class="modal-img" id="modal-gambar" src="" alt="">
+      <div class="modal-body">
+        <span class="tag" id="modal-tag"></span>
+        <h2 id="modal-judul"></h2>
+        <dl class="modal-meta">
+          <div><dt>Lokasi</dt><dd id="modal-lokasi"></dd></div>
+          <div><dt>Jam buka</dt><dd id="modal-jam"></dd></div>
+          <div><dt id="modal-harga-label">Harga</dt><dd id="modal-harga"></dd></div>
+        </dl>
+        <p id="modal-deskripsi"></p>
+        <div class="modal-actions">
+          <a class="btn btn-primary" id="modal-maps" href="#" target="_blank" rel="noopener">Buka di Google Maps</a>
+          <button class="btn btn-ghost" id="modal-tutup-bawah">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

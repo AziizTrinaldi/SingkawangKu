@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SingkawangKu — Kenalan dengan Kota Seribu Kelenteng</title>
+  <meta name="description" content="Panduan santai buat kamu yang baru pertama kali ke Singkawang.">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--HEADER Logo + menu navigasi -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="SingkawangKu, ke beranda">
+        <span class="brand-mark" aria-hidden="true">山</span>
+        <span class="brand-text">Singkawang<strong>Ku</strong></span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="menu-utama" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="menu-utama" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="index.html" class="is-current" aria-current="page">Beranda</a></li>
+          <li><a href="index.html#tentang">Tentang</a></li>
+          <li><a href="destinasi.html">Destinasi</a></li>
+          <li><a href="kegiatan.html">Budaya</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- Sambutan, judul, deskripsi singkat, foto,  -->
+    <section class="hero" id="beranda" aria-labelledby="judul-hero">
+      <div class="container hero-grid">
+
+        <div class="hero-text">
+          <p class="eyebrow"><span id="sapaan">Halo</span> dari Kalimantan Barat</p>
+          <h1 id="judul-hero">Selamat datang di Kota Seribu Kelenteng</h1>
+          <p class="lead">
+            Singkawang emang bukan kota besar, tapi justru itu enaknya. Pagi ngopi di kopitiam,
+            siang main air di pantai, malamnya kulineran di Pasar Hongkong. Semua masih bisa
+            dikejar dalam sehari, asal nggak kebanyakan berhenti buat foto.
+          </p>
+          <div class="hero-actions">
+            <a href="destinasi.html" class="btn btn-primary">Lihat Destinasi</a>
+            <a href="#tentang" class="btn btn-ghost">Kenalan Dulu</a>
+          </div>
+        </div>
+
+        <figure class="hero-figure">
+          <img src="https://image.idntimes.com/post/20260201/snapinsta_aab1cb3a-6962-4e10-9134-b7027b909fbb.jpg" alt="Suasana Kota Singkawang" width="900" height="1100">
+        
+        </figure>
+
+      </div>
+
+      <div class="container">
+        <ul class="facts" aria-label="Fakta singkat">
+          <li><strong>± 145 km</strong><span>di utara Kota Pontianak</span></li>
+          <li><strong>Tidayu</strong><span>Tionghoa, Dayak, Melayu</span></li>
+          <li><strong>Cap Go Meh</strong><span>Hari ke-15 setelah Imlek</span></li>
+          <li><strong>Gunung & Laut</strong><span>Bukit di timur, laut di barat</span></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- 
+         TENTANG SINGKAWANG
+     -->
+    <section class="section" id="tentang" aria-labelledby="judul-tentang">
+
+      <div class="container about-grid">
+        <div class="about-text">
+          <p class="eyebrow">Kenalan dulu</p>
+          <h2 id="judul-tentang">Kota di antara gunung, muara, dan laut</h2>
+          <p>
+            Nama Singkawang asalnya dari bahasa Hakka, <em>San Khew Jong</em>. Kalau diartikan bebas,
+            maksudnya kota di kaki gunung yang dekat muara sungai dan menghadap ke laut. Jujur,
+            deskripsi itu masih relate banget sampai sekarang: sisi timur penuh bukit, sisi barat
+            langsung ketemu Laut Natuna.
+          </p>
+          <p>
+            Ceritanya dimulai sekitar abad ke-18, waktu para penambang emas Hakka yang kerja di
+            Monterado sering singgah di sini. Lama-lama banyak yang menetap dan hidup bareng
+            masyarakat Dayak dan Melayu. Campuran tiga budaya ini sering disebut Tidayu, dan inilah
+            yang bikin Singkawang punya vibe beda dari kota lain di Kalimantan. Nggak heran kota ini
+            pernah dinobatkan sebagai kota paling toleran di Indonesia oleh SETARA Institute.
+          </p>
+
+          <ol class="pillars">
+            <li>
+              <h3>Kota Seribu Kelenteng</h3>
+              <p>Kelenteng di sini ada di mana-mana, dari yang megah di tengah kota sampai yang mungil di pinggir jalan. Dari situlah julukannya muncul.</p>
+            </li>
+            <li>
+              <h3>Cap Go Meh</h3>
+              <p>Puncak perayaan Imlek yang paling ditunggu. Pawai tatung-nya terkenal sampai luar negeri, dan tiap tahun kota mendadak penuh banget.</p>
+            </li>
+            <li>
+              <h3>Dapur Hakka & Melayu</h3>
+              <p>Choi pan, mie asin, rujak ebi, sampai bubur pedas. Banyak menu di sini yang susah dicari di kota lain, jadi siapin perut.</p>
+            </li>
+          </ol>
+        </div>
+
+        <aside class="name-card" aria-label="Asal nama Singkawang">
+          <p class="name-card-label">Asal nama</p>
+          <div class="hanzi-row">
+            <div class="hanzi"><span lang="zh">山</span><small>San</small><em>gunung</em></div>
+            <div class="hanzi"><span lang="zh">口</span><small>Khew</small><em>muara</em></div>
+            <div class="hanzi"><span lang="zh">洋</span><small>Jong</small><em>laut</em></div>
+          </div>
+          <p class="name-card-note">Dari <em>San Khew Jong</em> lahir nama Singkawang yang kita kenal sekarang.</p>
+        </aside>
+      </div>
+
+      <!-- Kamus mini -->
+      <div class="container kamus" aria-labelledby="judul-kamus">
+        <header class="section-head">
+          <p class="eyebrow">Kamus mini</p>
+          <h2 id="judul-kamus">Biar nggak cuma bisa senyum</h2>
+          <p>Bahasa Hakka (Khek) dipakai sehari-hari di Singkawang. Hafalin beberapa ini, dijamin penjualnya makin ramah. Klik kartunya buat lihat arti.</p>
+        </header>
+
+        <div class="kamus-grid">
+          <button class="kamus-kartu" aria-pressed="false">
+            <span class="kamus-isi">
+              <span class="kamus-depan"><span class="kamus-kata">Nyi ho mo?</span><span class="kamus-hint">Klik untuk lihat arti</span></span>
+              <span class="kamus-belakang"><span class="kamus-arti">Apa kabar?</span><span class="kamus-hint">Sapaan pembuka yang aman dipakai ke siapa aja.</span></span>
+            </span>
+          </button>
+
+          <button class="kamus-kartu" aria-pressed="false">
+            <span class="kamus-isi">
+              <span class="kamus-depan"><span class="kamus-kata">Nyi sit fon mang?</span><span class="kamus-hint">Klik untuk lihat arti</span></span>
+              <span class="kamus-belakang"><span class="kamus-arti">Udah makan belum?</span><span class="kamus-hint">Basa-basi khas, bukan beneran mau ngajak makan.</span></span>
+            </span>
+          </button>
+
+          <button class="kamus-kartu" aria-pressed="false">
+            <span class="kamus-isi">
+              <span class="kamus-depan"><span class="kamus-kata">Ho sit!</span><span class="kamus-hint">Klik untuk lihat arti</span></span>
+              <span class="kamus-belakang"><span class="kamus-arti">Enak!</span><span class="kamus-hint">Bilang ini ke penjual mie asin, pasti dia senang.</span></span>
+            </span>
+          </button>
+
+          <button class="kamus-kartu" aria-pressed="false">
+            <span class="kamus-isi">
+              <span class="kamus-depan"><span class="kamus-kata">Ki to chien?</span><span class="kamus-hint">Klik untuk lihat arti</span></span>
+              <span class="kamus-belakang"><span class="kamus-arti">Berapa harganya?</span><span class="kamus-hint">Wajib hafal kalau mau belanja di pasar.</span></span>
+            </span>
+          </button>
+
+          <button class="kamus-kartu" aria-pressed="false">
+            <span class="kamus-isi">
+              <span class="kamus-depan"><span class="kamus-kata">Ho kui!</span><span class="kamus-hint">Klik untuk lihat arti</span></span>
+              <span class="kamus-belakang"><span class="kamus-arti">Mahal banget!</span><span class="kamus-hint">Buat nawar. Ucapkan sambil senyum, ya.</span></span>
+            </span>
+          </button>
+
+          <button class="kamus-kartu" aria-pressed="false">
+            <span class="kamus-isi">
+              <span class="kamus-depan"><span class="kamus-kata">Do sia</span><span class="kamus-hint">Klik untuk lihat arti</span></span>
+              <span class="kamus-belakang"><span class="kamus-arti">Terima kasih</span><span class="kamus-hint">Penutup paling sopan setelah transaksi.</span></span>
+            </span>
+          </button>
+        </div>
+
+        <p class="kamus-catatan">Penulisan mengikuti cara baca orang Indonesia. Pelafalan aslinya bisa sedikit beda tergantung daerah.</p>
+      </div>
+
+      <!-- Link ke halaman lain -->
+      <div class="container next-links">
+        <a href="destinasi.html" class="next-card">
+          <img src="https://pastikesingkawang.id/files/media/2609/80ee5cdc-b1eb-442d-8f95-4300f913ac62.jpg" alt="" loading="lazy">
+          <div class="next-body">
+            <span class="next-label">16 tempat pilihan</span>
+            <h3>Destinasi, kuliner, cafe & oleh-oleh</h3>
+            <p>Mulai dari pantai sampai tahu buat oleh-oleh orang rumah.</p>
+            <span class="next-arrow">Jelajahi →</span>
+          </div>
+        </a>
+        <a href="kegiatan.html" class="next-card">
+          <img src="https://pastikesingkawang.id/files/media/2609/5012888d-b24e-4c2f-b79a-784aac3843b0.jpg" alt="" loading="lazy">
+          <div class="next-body">
+            <span class="next-label">Kalender budaya</span>
+            <h3>Kegiatan khas Singkawang</h3>
+            <p>Cap Go Meh, Cheng Beng, Festival Kue Bulan, dan lainnya.</p>
+            <span class="next-arrow">Lihat jadwalnya →</span>
+          </div>
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER-->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand brand-footer">
+          <span class="brand-mark" aria-hidden="true">山</span>
+          <span class="brand-text">Singkawang<strong>Ku</strong></span>
+        </a>
+        <p class="footer-tagline">Panduan santai buat kamu yang baru pertama kali main ke Singkawang.</p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Halaman</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="index.html#tentang">Tentang Singkawang</a></li>
+          <li><a href="destinasi.html">Destinasi & Kuliner</a></li>
+          <li><a href="kegiatan.html">Kegiatan Budaya</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Lokasi</h3>
+        <iframe class="footer-map" src="https://www.google.com/maps?q=Kota%20Singkawang&z=12&output=embed"
+                title="Peta Kota Singkawang" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="tahun">2026</span> SingkawangKu.</p>
+      <p>Referensi tempat: <a href="https://pastikesingkawang.id/" target="_blank" rel="noopener">pastikesingkawang.id</a></p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" id="ke-atas" aria-label="Kembali ke atas">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
