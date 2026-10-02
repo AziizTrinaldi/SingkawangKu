@@ -38,12 +38,6 @@ singkawangku/
 └── README.md
 ```
 
-## Cara Menjalankan
-
-1. Download atau clone repository ini.
-2. Buka `index.html` di browser.
-
-Tidak perlu instalasi apa pun.
 
 ## Sumber
 
