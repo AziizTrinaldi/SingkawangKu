@@ -20,7 +20,7 @@ Website panduan wisata Kota Singkawang, Kalimantan Barat, untuk pendatang yang b
 - Hitung mundur menuju Cap Go Meh
 - Peta Kota Singkawang di footer
 
-## Bahasa Pemrograman
+## Tools
 
 - HTML5
 - CSS3 (Flexbox, Grid, CSS Variables)
